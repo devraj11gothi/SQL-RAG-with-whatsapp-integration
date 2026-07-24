@@ -1,0 +1,9 @@
+streamlit
+sqlalchemy
+pymysql
+python-dotenv
+requests
+sqlparse
+pytest
+black
+isort
