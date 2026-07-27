@@ -20,7 +20,7 @@ Your question → LLM writes SQL → SQL runs on MySQL → LLM turns the result 
 
 ```bash
 git clone <repo-url>   # or copy the project folder
-cd SQL_RAG
+cd SQL-RAG-with-whatsapp-integration
 ```
 
 ## 2. Set up Python environment
