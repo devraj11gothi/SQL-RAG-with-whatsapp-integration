@@ -110,7 +110,11 @@ print(answer)
 "
 ```
 
-## 8. Run the tests
+## 8. WhatsApp integration
+
+The app can also be reached via WhatsApp instead of the Streamlit UI, using a FastAPI webhook (`app/whatsapp_webhook.py`) + `ngrok` tunnel. Full first-time Meta setup and restart steps live in `guide.md` — start there.
+
+## 9. Run the tests
 
 ```bash
 .venv/bin/pytest tests/ -v
@@ -122,6 +126,7 @@ Tests are offline (mocked LLM/DB calls) — no live LMStudio/MySQL connection ne
 ```
 app/
   main.py            Streamlit chat UI
+  whatsapp_webhook.py  FastAPI webhook: WhatsApp Cloud API in/out
   pipeline.py         Core orchestration: question -> SQL -> execute -> answer
   llm_client.py        Talks to LMStudio or Gemini (OpenAI-compatible API)
   db.py                MySQL connection + query execution
