@@ -24,3 +24,8 @@ GEMINI_BASE_URL = os.environ.get(
 LLM_TIMEOUT_S = int(os.environ["LLM_TIMEOUT_S"])
 
 MAX_ROW_LIMIT = int(os.environ["MAX_ROW_LIMIT"])
+
+# WhatsApp Cloud API (Meta)
+WHATSAPP_VERIFY_TOKEN = os.environ.get("WHATSAPP_VERIFY_TOKEN", "")
+WHATSAPP_ACCESS_TOKEN = os.environ.get("WHATSAPP_ACCESS_TOKEN", "")
+WHATSAPP_PHONE_NUMBER_ID = os.environ.get("WHATSAPP_PHONE_NUMBER_ID", "")
